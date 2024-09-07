@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       home:Scaffold(
         appBar: AppBar(title:Text("First  Project",style:TextStyle(fontSize: 33 ))),
-        body: Wrap(
+        body: SingleChildScrollView(
+          child:Column(
           children: [
             Text("Ibraheem") ,
             Container(width: 100,height: 100,color: Colors.red,),
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget{
             Container(width: 100,height: 100,color: Colors.tealAccent,),
 
           ],
+        )
         )
         )
 
